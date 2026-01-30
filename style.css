@@ -1,0 +1,86 @@
+body{
+    background-color: hsl(240, 14%, 16%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(0, 0%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(240, 57%, 61%);
+    color: hsl(0, 0%, 90%);
+    cursor: pointer;
+
+    transition: transform 0.3s ease-in-out;
+}
+button:hover{
+    background-color: hsl(240, 57%, 71%);
+    transform: scale(1.1);
+}
+h3{
+    font-size: 1.5rem;
+}
+.words{
+    position: relative;
+    font-size: 3rem;
+}
+.div-container{
+    background-color: hsl(240, 14%, 26%);
+    height: 800px;
+    width: 700px;
+    border-radius: 7.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-container{
+    background-color: hsl(240, 14%, 16%);
+    height: 100px;
+    width: 600px;
+    border-radius: 8.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -500px;
+}
+.input-area{
+    background-color: hsl(240, 14%, 36%);
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    color: hsl(0, 0%, 90%);
+}
+.moveDown{
+    animation: slideDown 7s ease-in-out forwards;
+}
+.goBack{
+    animation: moveBack 0.1s ease-in-out forwards;
+}
+.wpm{
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: -85px;
+    right: -270px;
+}
+@keyframes slideDown{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(590px);
+    }
+}
+@keyframes moveBack{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(590px);
+    }
+}
